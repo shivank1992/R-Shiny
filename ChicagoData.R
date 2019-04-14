@@ -3,7 +3,7 @@
 
 
 #Load packages
-library(rsconnect)
+#library(rsconnect)
 library(shiny)
 library(leaflet)
 library(dplyr)
@@ -155,8 +155,8 @@ ui = shinyUI(navbarPage(tags$b("Shiny App Title : Crimes that occurred in the Ci
 server <- function(input,output, session){
   
   ###########################################################################################
-  #Tab-1
-  #Draw barchart fro crime types by month 
+  #Tab-2
+  #Draw barchart for crime types by month 
 
   #Reactive data filtering
   filtered_data <- reactive({
@@ -212,7 +212,7 @@ server <- function(input,output, session){
   
   ###########################################################################################
 
-  ######Tab2 : Location of crimes by date on a map
+  ######Tab1 : Location of crimes by date on a map
   
   #Reactive data filtering according to the date
   datefiltered_data <- reactive({
